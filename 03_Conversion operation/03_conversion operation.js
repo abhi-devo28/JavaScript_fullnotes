@@ -19,4 +19,33 @@ console.log( typeof valueInString)
 let sigma = 0
 let valueInBoolean = Boolean(sigma)
 console.log(valueInBoolean)
- // in 0 we get only false and any natural no. we get true
+ // in 0 we get only false and any natural no. we get true  
+
+
+
+ /*---------- operations -----------*/
+
+ console.log(2+2)  // add the two numbers
+ console.log(2-2)  // subltraction
+ console.log(2/2)  // division
+ console.log(2*2)  // multiply
+ console.log(2**5)  //raise to power
+ console.log(2%2)   // remainder
+
+
+/*Now we learn some concepts*/
+
+console.log("1"+2)
+console.log( 1 + 1 + "2")
+console.log(1 + "1" + 2 )
+
+
+//now we see some prefix and suffix in js ( increment or decrement)
+//firstly solve it on copy then see the output
+
+let num1 = 2 
+console.log( num1++)
+console.log( num1--)
+console.log( ++num1)
+console.log( --num1)
+console.log( num1)
