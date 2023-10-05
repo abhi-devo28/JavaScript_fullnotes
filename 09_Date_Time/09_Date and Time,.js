@@ -9,6 +9,7 @@
  console.log(typeof myDate)
 
  let timeStamp = Date.now()
+ console.log(timeStamp)
 
  //Method for comparing the date in milli second
 
