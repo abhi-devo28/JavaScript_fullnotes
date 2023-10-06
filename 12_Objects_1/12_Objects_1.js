@@ -16,14 +16,23 @@ const Jsuser = {
     lastLoginDays: [ "monday", "tuesday"]
 }
 
-console.log(Jsuser.email)  // we old way to print the object 
+console.log(Jsuser.email)  //  old way to print the object 
 console.log(Jsuser["full name"]) // this way we can use this type of value to print
 console.log(Jsuser[sym1])
 
 // changing the email
 
 Jsuser.email = "tuhar@google.com"
-Object.freeze(Jsuser)  // this is way to freeze the object
+//Object.freeze(Jsuser)  // this is way to freeze the object
 Jsuser.email = "rajput@chatgpt.com"
 
 console.log(Jsuser)
+
+
+//   we can use funtions as variable 
+
+Jsuser.greeting = function() {
+    console.log(`hello js users, ${this.name}`);
+}
+
+ console.log(Jsuser.greeting())
