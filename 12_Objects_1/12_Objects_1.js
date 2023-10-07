@@ -1,8 +1,8 @@
 // singleton   "when we declare it as constructor" 
+Object.create   // constructor method in which singleton is made
 
 // object literals
   
-Object.create   // constructor method in which singleton is made
 
 let sym1 = Symbol()
 
