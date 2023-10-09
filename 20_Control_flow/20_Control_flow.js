@@ -86,35 +86,28 @@ if (userLoggedI && debitCard && loggedInfromemail||loggedInfromgoogle ){
     default: 
     console.log( "NO month")
     break;
+ }
 
     // break : break the control flow after break whole case run automatically }
 
 
+    //truthy 
+
+    const Useremail = ""
+
+    if (Useremail) {
+        console.log( "got the user email")
+    }
+
+    else {
+        console.log ( "don't have user email");
+    }
+  
+    // empty string then it is assume false  , then it is empty array it is assume it is true
 
 
+     
 
+    // falsy values => //false, 0, -0, 0n, "", null , undefined, NaN
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // truthy values => 
