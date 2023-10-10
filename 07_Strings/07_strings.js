@@ -1,13 +1,13 @@
  // --------------strings-----------------
 
- const name = "abhishek"
+ const heroName = "abhishek"
  const repocount = 3
 console.log(name)
  //console.log(name + repocount + "value")   // we don't use this type of syntax it is outdated
 
  // we use backticks
 
- console.log(`hello my name is ${name} and my repo count is ${repocount}`)
+ console.log(`hello my name is ${heroName} and my repo count is ${repocount}`)
 
  const gameName = String(`abhishek`)
  console.log(gameName)
