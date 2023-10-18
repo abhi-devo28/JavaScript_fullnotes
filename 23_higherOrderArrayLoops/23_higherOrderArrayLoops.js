@@ -19,12 +19,12 @@ for (const greet of greetings){
 
 
 const map = new Map()     // map enter only unique value 
-map.entries ("Punjab", "pun")
+map.set ("Punjab", "pun")
 map.set ("Himachal", "hp")
 
 console.log(map)
 
-for (const [key,value] or map){
+for (const [key, value] of map){   // arrray destructure
     console.log(key , ":-" , value)
 }
 
