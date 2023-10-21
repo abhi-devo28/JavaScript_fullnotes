@@ -18,7 +18,7 @@ for (const greet of greetings){
 // maps 
 
 
-const map = new Map()     // map enter only unique value 
+const map = new Map()     // map enter only unique value and in order as entered
 map.set ("Punjab", "pun")
 map.set ("Himachal", "hp")
 
@@ -28,5 +28,20 @@ for (const [key, value] of map){   // arrray destructure
     console.log(key , ":-" , value)
 }
 
+
+/*const myObject = {
+    'game1' : ' nfs'
+    'game2' : 'spiderman'
+}
+
+for ( const */        // this will not work
+
+
+const myObject = {
+    js : ' javascript '
+    cpp : 'c++'
+    py : ' python'
+    
+}
 
 
