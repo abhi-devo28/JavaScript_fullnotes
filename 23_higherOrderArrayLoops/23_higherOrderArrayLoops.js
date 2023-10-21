@@ -44,4 +44,53 @@ const myObject = {
     
 }
 
+// for in loop (objects)
+
+for (const key in myObject ){
+    console.log( ` ${key} shortcut is for ${myObject[key]}`)
+}
+
+// for in loop (arrays)
+
+const programming = [ "js", "cpp" , "py"]
+
+for (const key in programming){
+    console.log(programming[key])
+}
+
+
+
+// for each loop most used for arrays
+
+const coding = ["js", "ruby", "java", "python"]
+
+coding.forEach((item, index, arr) => {    // callback function has no name
+    console.log(item, index, arr)
+});
+
+
+/*function printme (item){    // this is also the  method
+    console.log(item)
+}
+coding.forEach(printme)*/
+
+
+const mycoding = [
+    {
+        languageName : "javascript",
+        languageFileName : "js"
+    },
+    {
+        languageName : "java",
+        languageFileName : "ja"
+    },
+    {
+        languageName : "python",
+        languageFileName : "py"
+    },
+]
+
+mycoding.forEach( (item) => {
+    console.log(item.languageName)
+})
 
