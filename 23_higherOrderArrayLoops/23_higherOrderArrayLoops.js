@@ -90,7 +90,26 @@ const mycoding = [
     },
 ]
 
-mycoding.forEach( (item) => {
+  const values = mycoding.forEach( (item) => {
     console.log(item.languageName)
 })
+ 
+//console.log( values)  // undefined  // for each loop not return any loop
 
+
+const myNums = [ 1, 2, 3 , 4 , 5 , 6, 7 , 8 , 9  ,10]
+
+ const nnums =[]
+ myNums.forEach( (num) => {
+    if (num > 4 ) {
+        nnums.push(num)
+    }
+    
+ });
+//const newNums = myNums.filter( (num) => num > 4 )  // condition checking
+console.log(nnums)
+
+
+// books example with filter 
+
+//userbooks = books.filter( (bk) => bk.genre === "history")
