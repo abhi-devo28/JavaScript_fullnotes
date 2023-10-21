@@ -38,8 +38,8 @@ for ( const */        // this will not work
 
 
 const myObject = {
-    js : ' javascript '
-    cpp : 'c++'
+    js : ' javascript ',
+    cpp : 'c++',
     py : ' python'
     
 }
