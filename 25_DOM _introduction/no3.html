@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ul class = "language">
+        <li>javascript</li>
+        </ul>
+</body>
+<script>
+    function addlanguage( langName){   // traversing
+         const li = document.createElement('li')
+         li.innerHTML = `${langName}`
+         document.querySelector('.language').appendChild(li)
+    }
+   addlanguage("python")
+    addlanguage("typescript")
+
+    function addOptiLanguage (langName){  // optimised work  most suitable method to use in bigger projects
+         const li = document.createElement("li")
+         li.appendChild(document.createTextNode(langName))
+         document.querySelector(".language").appendChild(li)
+    }
+    addOptiLanguage("ruby")
+
+
+    // editing
+
+    const secondlang =  document.querySelector("li:nth-child(2)")
+     const newli =document.createElement("li");
+      newli.textContent = "mojo"
+    secondlang.replaceWith(newli)
+
+
+    // edit
+    const firstlang = document.querySelector("li:nth-child(1)")
+    firstlang.outerHTML = '<li>typescript</li>'
+
+    // remove
+
+    const lastlang= document.querySelector("li:last-child")
+    lastlang.remove()
+</script>
+
+
+</html>
